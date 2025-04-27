@@ -42,6 +42,12 @@ const options = ref({
   yAxis: {
     title: {
       text: null
+    },
+    max: 100, // Set maximum value to 100%
+    min: 0,   // Set minimum value to 0%
+    tickInterval: 25, // Create ticks at 0, 25, 50, 75, 100
+    labels: {
+      format: '{value}%' // Add % symbol to y-axis labels
     }
   },
   tooltip: {
